@@ -1,13 +1,13 @@
 import React from "react";
 import { ButtonGoogleStyle } from "./ButtonGoogle.styled";
+import Svg from "../../Images/svg/Google-logo.svg";
+import { GoogleSvg } from "./GoogleSvg.style";
 
 const ButtonGoogle = ({text}) => (
     <ButtonGoogleStyle>
-        <span>
-            <svg width="25" height="25">
-                <use href="/"/>
-            </svg>
-        </span>
+        <GoogleSvg>
+            <img src={Svg} />
+        </GoogleSvg>
         {text}
     </ButtonGoogleStyle>
 );

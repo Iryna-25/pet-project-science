@@ -4,7 +4,7 @@ export const ButtonGoogleStyle = styled.button `
     display: flex;
     width: 419px;
     height: 59px;
-    padding: 21px;
+    padding: 15px;
     font-size: 16px;
     margin: 15px 0px;
     border: 3px solid;
