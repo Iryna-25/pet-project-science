@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pet-project-science/static/css/main.073c9b0a.css",
+    "main.js": "/pet-project-science/static/js/main.7709f01e.js",
+    "static/js/787.b0efaea8.chunk.js": "/pet-project-science/static/js/787.b0efaea8.chunk.js",
+    "static/media/logo.svg": "/pet-project-science/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/pet-project-science/index.html",
+    "main.073c9b0a.css.map": "/pet-project-science/static/css/main.073c9b0a.css.map",
+    "main.7709f01e.js.map": "/pet-project-science/static/js/main.7709f01e.js.map",
+    "787.b0efaea8.chunk.js.map": "/pet-project-science/static/js/787.b0efaea8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.7709f01e.js"
+  ]
+}
