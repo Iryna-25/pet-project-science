@@ -6,7 +6,7 @@ import { GoogleSvg } from "./GoogleSvg.style";
 const ButtonGoogle = ({text}) => (
     <ButtonGoogleStyle>
         <GoogleSvg>
-            <img src={Svg} />
+            <img src={Svg} alt="Google-logo" />
         </GoogleSvg>
         {text}
     </ButtonGoogleStyle>

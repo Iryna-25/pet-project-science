@@ -3,5 +3,5 @@ import styled from "styled-components";
 export const Wrapper = styled.div `
     width: 419px;
     height: 832px;
-    padding: 96px 57px 72px 58px;
+    padding: 0px 57px 0px 58px;
 ` 

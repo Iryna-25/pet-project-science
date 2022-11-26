@@ -1,16 +1,45 @@
-import React from "react";
-import Image from "../../Images/Image.jpg";
+import React, { useState } from "react";
 import ArrowLeft from "../../Images/svg/Arrow-left.svg";
 import ArrowRight from "../../Images/svg/Arrow-right.svg";
-import Images from "../Slider/Images.style";
+import { ArrowLeftStyles, ArrowRightStyles, SliderStyles, SlideStyles} from "./Arrows.style";
 
-const Slider = () => (
-    <div>
-        <img src={Image} />
-        <img src={ArrowLeft} />
-        <img src={ArrowRight} /> 
-    </div>
-);
+const Slider = ({slides}) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const slideStyles = {
+        backgroundImage: `url(${slides[currentIndex]})`,
+    };
+
+    const goToPrevious = () => {
+        const isFirstSlide = currentIndex === 0;
+        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex);
+    };
+
+    const goToNext = () => {
+        const isLastSlide = currentIndex === slides.length - 1;
+        const newIndex = isLastSlide ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex);
+    };
+
+    return (
+        <SliderStyles>
+        <ArrowLeftStyles
+            onClick={goToPrevious}>
+            <img src={ArrowLeft} 
+            alt="Arrow-left"/>  
+        </ArrowLeftStyles>
+
+        <ArrowRightStyles 
+            onClick={goToNext}>         
+            <img src={ArrowRight} 
+            alt="Arrow-right" />
+        </ArrowRightStyles>
+        <SlideStyles style={slideStyles} />
+    </SliderStyles>
+    )
+};
 
 export default Slider;
+
 
