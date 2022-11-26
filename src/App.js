@@ -7,9 +7,6 @@ import Slider from './Components/Slider/Slider';
 import { Container } from './Components/Container/Container.style';
 import { SliderContainer } from './Components/Slider/Slider.style';
 
-
-
-
 export default function App() {
   const slides = [
     require('./Images/Image.jpg'),
@@ -20,18 +17,27 @@ export default function App() {
 
   return (
     <Container>
-
-      <Routes>
-        <Route/>
-        {/* <SignUpPage/> */}
+      {/* <Routes>
+        <Route
+          path="/signup"
+            // <SignUpPage/>
+        /> */}
         <SliderContainer>
           <Slider slides={slides}/>
         </SliderContainer>
-        {/* <LoginPage/> */}
-        <ForgotPasswordPage/>
-        {/* <VarifyPage/> */}
-      </Routes>
+        {/* <Route
+          path="/login"
+          // <LoginPage/>
+        />
+        <Route
+          path="/forgotpassword"
+          // <ForgotPasswordPage/>
+        />
+        <Route
+          path="/varify"
+          // <VarifyPage/>
+        />
+      </Routes> */}
     </Container>
-
   );
 }
