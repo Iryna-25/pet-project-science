@@ -1,6 +1,13 @@
 import SignUpPage from './Pages/SignUpPage';
+import LoginPage from './Pages/LoginPage'; 
+import ForgotPasswordPage from './Pages/ForgotPassword';
+import VarifyPage from './Pages/VarifyPage';
+
 import Slider from './Components/Slider/Slider';
 import { Container } from './Components/Container/Container.style';
+import { SliderContainer } from './Components/Slider/Slider.style';
+
+
 
 
 export default function App() {
@@ -11,19 +18,19 @@ export default function App() {
     require('./Images/Image-4.jpg'),
   ];
 
-const containerStyles = {
-  width: '100%',
-  height: '100%',
-  margin: '0 auto',
-};
-
   return (
     <Container>
-      <SignUpPage/>
-      <div style={containerStyles}> 
-        <Slider slides={slides}/>
-      </div>
-      
+
+      <Routes>
+        <Route/>
+        {/* <SignUpPage/> */}
+        <SliderContainer>
+          <Slider slides={slides}/>
+        </SliderContainer>
+        {/* <LoginPage/> */}
+        <ForgotPasswordPage/>
+        {/* <VarifyPage/> */}
+      </Routes>
     </Container>
 
   );
