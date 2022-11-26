@@ -3,9 +3,7 @@ import React from "react";
 import { Wrapper } from "../Components/Wrapper/Wrapper.style";
 
 import Header from "../Components/Header/Header";
-import Input from "../Components/Input/Input";
 import Button from "../Components/Button/Button";
-import ButtonGoogle from "../Components/ButtonGoogle/ButtonGoogle";
 import Footer from "../Components/Footer/Footer";
 
 

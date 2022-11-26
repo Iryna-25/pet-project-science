@@ -6,6 +6,7 @@ import VarifyPage from './Pages/VarifyPage';
 import Slider from './Components/Slider/Slider';
 import { Container } from './Components/Container/Container.style';
 import { SliderContainer } from './Components/Slider/Slider.style';
+import { Route, Routes } from 'react-router';
 
 export default function App() {
   const slides = [
@@ -17,27 +18,36 @@ export default function App() {
 
   return (
     <Container>
-      {/* <Routes>
-        <Route
+      <Routes>
+        <Route 
+          exact
           path="/signup"
-            // <SignUpPage/>
-        /> */}
+        >
+          <SignUpPage/>        
+        </Route>
+        
         <SliderContainer>
           <Slider slides={slides}/>
         </SliderContainer>
-        {/* <Route
+        
+        <Route 
           path="/login"
-          // <LoginPage/>
-        />
+        >
+          <LoginPage/>
+        </Route>
+        
         <Route
           path="/forgotpassword"
-          // <ForgotPasswordPage/>
-        />
-        <Route
+        >
+          <ForgotPasswordPage/>
+        </Route>
+        
+        <Route 
           path="/varify"
-          // <VarifyPage/>
-        />
-      </Routes> */}
+        >
+          <VarifyPage/>
+        </Route>
+      </Routes>
     </Container>
   );
 }
