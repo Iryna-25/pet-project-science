@@ -1,3 +1,5 @@
+import { Route, Routes, NavLink } from 'react-router-dom';
+
 import SignUpPage from './Pages/SignUpPage';
 import LoginPage from './Pages/LoginPage'; 
 import ForgotPasswordPage from './Pages/ForgotPassword';
@@ -6,7 +8,7 @@ import VarifyPage from './Pages/VarifyPage';
 import Slider from './Components/Slider/Slider';
 import { Container } from './Components/Container/Container.style';
 import { SliderContainer } from './Components/Slider/Slider.style';
-import { Route, Routes } from 'react-router';
+
 
 export default function App() {
   const slides = [
@@ -18,36 +20,19 @@ export default function App() {
 
   return (
     <Container>
+      <nav>
+
+      </nav>
+
       <Routes>
-        <Route 
-          exact
-          path="/signup"
-        >
-          <SignUpPage/>        
-        </Route>
-        
-        <SliderContainer>
-          <Slider slides={slides}/>
-        </SliderContainer>
-        
-        <Route 
-          path="/login"
-        >
-          <LoginPage/>
-        </Route>
-        
-        <Route
-          path="/forgotpassword"
-        >
-          <ForgotPasswordPage/>
-        </Route>
-        
-        <Route 
-          path="/varify"
-        >
-          <VarifyPage/>
-        </Route>
-      </Routes>
+        <Route path="/signup" element={<SignUpPage/> } />
+        <Route path="/login" element={<LoginPage/> } />
+        <Route path="/forgotpassword" element={<ForgotPasswordPage/> } />
+        <Route path="/varify" element={<VarifyPage/> } />
+      </Routes>        
+      <SliderContainer>
+        <Slider slides={slides}/>
+      </SliderContainer>
     </Container>
   );
 }
