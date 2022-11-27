@@ -1,4 +1,4 @@
-import { BrowserRouter as Route, Routes, Link} from 'react-router-dom';
+import { BrowserRouter as Route, Routes, NavLink, Router} from 'react-router-dom';
 
 import SignUpPage from './Pages/SignUpPage';
 import LoginPage from './Pages/LoginPage'; 
@@ -11,33 +11,55 @@ import { SliderContainer } from './Components/Slider/Slider.style';
 
 
 export default function App() {
-  const slides = [
-    require('./Images/Image.jpg'),
-    require('./Images/Image-2.jpg'),
-    require('./Images/Image-3.jpg'),
-    require('./Images/Image-4.jpg'),
-  ];
+  // const slides = [
+  //   require('./Images/Image.jpg'),
+  //   require('./Images/Image-2.jpg'),
+  //   require('./Images/Image-3.jpg'),
+  //   require('./Images/Image-4.jpg'),
+  // ];
 
   return (
-    <>
-    <Container>
-      <div>asdfghjkl,mnjbhgv</div>
-      {/* <nav>
-        <Link to="/signup">
-          SignUp
-        </Link>
-      </nav> */}
-      {/* <Routes>
-        <Route exact path="signup" element={ <SignUpPage/> }/>
-        <Route path="login" element={ <LoginPage/> } />
-        <Route path="forgotpassword" element={ <ForgotPasswordPage/> } />
-        <Route path="varify" element={ <VarifyPage/> } />
-      </Routes>  */}
+    <Router>
+      {/* <a href='/home'> Home </a> */}
+      <Routes>
+        <Route></Route>
+      </Routes>
 
-      {/* <SliderContainer>
-        <Slider slides={slides}/>
-      </SliderContainer>  */}
-    </Container>
-    </>
+
+    </Router>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // <Container>
+    //   <div>asdfghjkl,mnjbhgv</div>
+    //   <nav>
+    //     <div>SignUp</div>
+    //   </nav>
+
+
+    //   {/* <Routes>
+    //     <Route exact path="signup" element={ <SignUpPage/> }/>
+    //     <Route path="login" element={ <LoginPage/> } />
+    //     <Route path="forgotpassword" element={ <ForgotPasswordPage/> } />
+    //     <Route path="varify" element={ <VarifyPage/> } />
+    //   </Routes>  */}
+
+    //   <SliderContainer>
+    //     <Slider slides={slides}/>
+    //   </SliderContainer> 
+    // </Container>
   );
 }
