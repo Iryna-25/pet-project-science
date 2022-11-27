@@ -1,4 +1,4 @@
-import { Route, Routes, NavLink } from 'react-router-dom';
+import { Link, NavLink, Route, Routes } from 'react-router-dom';
 
 import SignUpPage from './Pages/SignUpPage';
 import LoginPage from './Pages/LoginPage'; 
@@ -8,6 +8,7 @@ import VarifyPage from './Pages/VarifyPage';
 import Slider from './Components/Slider/Slider';
 import { Container } from './Components/Container/Container.style';
 import { SliderContainer } from './Components/Slider/Slider.style';
+import styled from 'styled-components';
 
 
 export default function App() {
@@ -20,19 +21,28 @@ export default function App() {
 
   return (
     <Container>
-      <nav>
+      <div>asdfghjkl,mnjbhgv</div>
+      {/* <nav>
+        <Link to="/signup">
+          SignUp
+        </Link>
+      </nav> */}
 
-      </nav>
+      {/* <switch>
+        <Route path="/signup" element={ <SignUpPage/> }/>
+      </switch> */}
 
-      <Routes>
-        <Route path="/signup" element={<SignUpPage/> } />
-        <Route path="/login" element={<LoginPage/> } />
-        <Route path="/forgotpassword" element={<ForgotPasswordPage/> } />
-        <Route path="/varify" element={<VarifyPage/> } />
-      </Routes>        
-      <SliderContainer>
+
+      {/* <Routes>
+        <Route path="/signup" element={ <SignUpPage/> }/>
+        <Route path="/login" element={ <LoginPage/> } />
+        <Route path="/forgotpassword" element={ <ForgotPasswordPage/> } />
+        <Route path="/varify" element={ <VarifyPage/> } />
+      </Routes>         */}
+
+      {/* <SliderContainer>
         <Slider slides={slides}/>
-      </SliderContainer>
+      </SliderContainer>  */}
     </Container>
   );
 }
