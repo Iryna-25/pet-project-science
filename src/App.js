@@ -1,4 +1,5 @@
-import { BrowserRouter as Route, Routes, NavLink, Router} from 'react-router-dom';
+import React from 'react';
+import { Route, Routes, NavLink, Router} from 'react-router-dom';
 
 import SignUpPage from './Pages/SignUpPage';
 import LoginPage from './Pages/LoginPage'; 
@@ -10,7 +11,7 @@ import { Container } from './Components/Container/Container.style';
 import { SliderContainer } from './Components/Slider/Slider.style';
 
 
-export default function App() {
+function App() {
   // const slides = [
   //   require('./Images/Image.jpg'),
   //   require('./Images/Image-2.jpg'),
@@ -19,17 +20,16 @@ export default function App() {
   // ];
 
   return (
-    <Router>
-      {/* <a href='/home'> Home </a> */}
-      <Routes>
-        <Route></Route>
-      </Routes>
+    <div>
+hhjbkjhj
+    </div>
 
-
-    </Router>
-
-
-
+    // <Router>
+    //   <a href='/home'> Home </a>
+    //   <Routes>
+    //     <Route></Route>
+    //   </Routes>
+    // </Router>
 
 
 
@@ -50,12 +50,12 @@ export default function App() {
     //   </nav>
 
 
-    //   {/* <Routes>
-    //     <Route exact path="signup" element={ <SignUpPage/> }/>
-    //     <Route path="login" element={ <LoginPage/> } />
-    //     <Route path="forgotpassword" element={ <ForgotPasswordPage/> } />
-    //     <Route path="varify" element={ <VarifyPage/> } />
-    //   </Routes>  */}
+      // <Routes>
+      //   <Route exact path="/signup" element={SignUpPage}/>
+      //   <Route path="/login" element={LoginPage} />
+      //   <Route path="/forgotpassword" element={ForgotPasswordPage} />
+      //   <Route path="/varify" element={VarifyPage} />
+      // </Routes>  
 
     //   <SliderContainer>
     //     <Slider slides={slides}/>
@@ -63,3 +63,5 @@ export default function App() {
     // </Container>
   );
 }
+
+export default App;
