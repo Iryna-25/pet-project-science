@@ -7,7 +7,7 @@ import Button from "../Components/Button/Button";
 import Footer from "../Components/Footer/Footer";
 
 
-const VarifyPage = () => {
+const VerifyPage = () => {
     return (
         <Wrapper>
             <Header
@@ -21,11 +21,11 @@ const VarifyPage = () => {
 
             <Footer
                text="Already have an account ? "
-               href="/"
+               href="/login"
                link="Log in"
             />
         </Wrapper>
     )
 }
 
-export default VarifyPage;
+export default VerifyPage;

@@ -4,11 +4,12 @@ import { Route, Routes } from 'react-router-dom';
 import SignUpPage from './Pages/SignUpPage';
 import LoginPage from './Pages/LoginPage'; 
 import ForgotPasswordPage from './Pages/ForgotPassword';
-import VarifyPage from './Pages/VarifyPage';
+import VerifyPage from './Pages/VarifyPage';
 
 import Slider from './Components/Slider/Slider';
 import { Container } from './Components/Container/Container.style';
 import { SliderContainer } from './Components/Slider/Slider.style';
+
 
 
 export default function App() {
@@ -21,9 +22,19 @@ export default function App() {
 
   return (
     <Container>
-      {/* <Link to="signup"> Sign Up</Link> */}
       <Routes>
-        <Route path="/signup" 
+        {/* <Route path="/" 
+          element={ 
+          <>          
+            <h3>Did you be here before?</h3>
+            <NavLink to="signup">Sign Up</NavLink>
+            <NavLink to="login">Log In</NavLink>
+          </>
+        }
+        /> */}
+
+        <Route
+        path="/" 
           element={ 
           <>
             <SignUpPage/>
@@ -50,11 +61,11 @@ export default function App() {
           }
         />
 
-        <Route path="/varify" 
+        <Route path="/verify" 
           element={
           <>
             <SliderContainer> <Slider slides={slides}/></SliderContainer> 
-            <VarifyPage/>
+            <VerifyPage/>
           </>
           }
         />

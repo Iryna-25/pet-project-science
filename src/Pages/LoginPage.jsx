@@ -7,6 +7,7 @@ import Input from "../Components/Input/Input";
 import Button from "../Components/Button/Button";
 import ButtonGoogle from "../Components/ButtonGoogle/ButtonGoogle";
 import Footer from "../Components/Footer/Footer";
+import Link from "../Components/Link/Link";
 
 
 const LoginPage = () => {
@@ -24,7 +25,11 @@ const LoginPage = () => {
                 type="text"
                 placeholder="Password"
             />
-            <p>Forgot password ?</p>
+
+            <Link
+                href="/"
+                link="Forgot password ?" 
+            />
 
             <Button
                 text="Login"
@@ -35,7 +40,6 @@ const LoginPage = () => {
             <Footer
                text="Don't have an account? "
                href="/"
-
                link="Sign up" 
             />
         </Wrapper>
