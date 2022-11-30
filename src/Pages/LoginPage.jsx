@@ -27,7 +27,7 @@ const LoginPage = () => {
             />
 
             <Link
-                href="/"
+                href="/forgotpassword"
                 link="Forgot password ?" 
             />
 
