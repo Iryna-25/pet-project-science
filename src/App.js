@@ -34,7 +34,7 @@ export default function App() {
         /> */}
 
         <Route
-        path="/" 
+        path="/signup" 
           element={ 
           <>
             <SignUpPage/>
